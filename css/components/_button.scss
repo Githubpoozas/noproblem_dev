@@ -1,0 +1,24 @@
+.btn{
+    &,
+    &:link,
+    &:visited{
+        font-size: 1.2rem;
+        padding: 0.2rem 4rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        border:none;
+        cursor: pointer;
+        display: inline-block;
+
+
+    }
+
+    &--white{
+        color: $color-white;
+        background: $color-buttom-more;
+    }
+}
+
+.more-button{
+    text-align: center;
+}

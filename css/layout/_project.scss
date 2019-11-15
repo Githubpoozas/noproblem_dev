@@ -1,0 +1,54 @@
+//slide 2
+.swiper-container__slide2 {
+    // padding: 0;
+    // margin: auto;
+    // // width: 90%;
+    height: 23vw;
+    
+
+}
+
+.swiper-wrapper__slide2 {
+    padding: 0 3.5vmax;
+    // margin: 0 auto auto;
+}
+
+.swiper-slide__slide2 {
+    // padding: 0;
+    // margin: 0 auto 20px;
+
+    /* width: 200px; */
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    // height: calc((100% - 30px) / 2);
+    width: 10vw !important;
+    height: 10vw !important;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    
+    // margin: 1vw;
+
+    &__img {
+        width: 100%;
+
+    }
+}
+
+

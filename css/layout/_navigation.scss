@@ -1,0 +1,29 @@
+.navigation {
+    background-color: $color-navbar;
+    height: 5.5rem;
+
+    &__nav {}
+
+    &__list {
+        padding: 1rem 0;
+        width: 100%;
+        list-style-type: none;
+        display: inline-flex;
+        justify-content: space-evenly;
+
+    }
+
+    &__item {}
+
+    &__link {
+
+        &:link,
+        &:visited {
+
+            display: inline-block;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}

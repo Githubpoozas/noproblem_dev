@@ -1,0 +1,25 @@
+.content {
+    width: 100%;
+    background-color: orange;
+}
+
+.section-swiper {
+    background-color: yellow;
+    @include horizontalCenter;
+}
+
+.section-project {
+    background-color: lightgreen;
+    @include horizontalCenter;
+}
+
+.section-banner {
+    background-color: aqua;
+    @include horizontalCenter;
+}
+
+.section-lastest-product {
+    background-color: palevioletred;
+    @include horizontalCenter;
+
+}

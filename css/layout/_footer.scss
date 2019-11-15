@@ -1,0 +1,47 @@
+.footer {
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: $color-white;
+    }
+
+
+    &__container {
+        background-color: $color-footer;
+        color: $color-white;
+    }
+
+    &__row {}
+
+    &__col {
+        &__icon {}
+
+        &__contact {}
+
+        &__socialmedia {}
+    }
+
+    &__icon {}
+
+    &__contact {}
+
+    &__socialmedia {
+        &__list {
+            text-decoration: none;
+            list-style-type: none;
+
+            display: flex;
+        }
+
+        &__item {
+            margin: auto;
+
+            a {
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}

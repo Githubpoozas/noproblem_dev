@@ -1,0 +1,16 @@
+.header {
+    text-align: center;
+
+}
+
+.graybar {
+    height: 5px;
+
+    &-right {
+        text-align: right;
+    }
+
+    &-left {
+        text-align: left;
+    }
+}
