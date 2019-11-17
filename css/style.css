@@ -40,13 +40,13 @@ body:lang(en) {
   color: #204287;
   text-transform: uppercase;
   font-weight: bolder;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .heading-secondary {
   color: #5C5C5C;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .header {
@@ -79,7 +79,11 @@ body:lang(en) {
 }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem !important;
+  margin-bottom: 6rem !important;
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: 10rem !important;
 }
 
 .u-margin-top-big {
@@ -505,6 +509,11 @@ body:lang(en) {
 .swiper-slide:nth-child(3n) {
     width: 40%;
 } */
+.text {
+  margin: auto;
+  width: 90%;
+}
+
 .home__content {
   width: 100%;
 }
@@ -530,6 +539,10 @@ body:lang(en) {
 
 .product__section-banner {
   margin: auto;
+  width: 100%;
+}
+
+.img3 img {
   width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
