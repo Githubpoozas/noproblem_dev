@@ -1,0 +1,7 @@
+.product__content {
+    width: 100%;
+}
+
+.product__section-banner {
+    @include horizontalCenterFit;
+}

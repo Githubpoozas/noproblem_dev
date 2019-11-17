@@ -28,3 +28,19 @@ body {
     font-size: 2rem;
 }
 
+.header {
+    text-align: center;
+    font-weight: 900;
+}
+
+.graybar {
+    height: 5px;
+
+    &-left {
+        text-align: right;
+    }
+
+    &-right {
+        text-align: left;
+    }
+}

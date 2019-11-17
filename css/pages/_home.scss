@@ -1,20 +1,16 @@
-.content {
+.home__content {
     width: 100%;
 }
 
-.section-swiper {
+.home__section-swiper {
     @include horizontalCenter;
 }
 
-.section-project {
+.home__section-project {
     @include horizontalCenter;
 }
 
-.section-banner {
+.home__section-banner {
     @include horizontalCenter;
 }
 
-.section-lastest-product {
-    @include horizontalCenter;
-
-}

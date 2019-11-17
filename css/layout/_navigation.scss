@@ -1,5 +1,6 @@
 
 .topnav {
+  margin: 1rem 0;
     overflow: hidden;
     background-color: $color-navbar;
   }
@@ -14,7 +15,8 @@
     font-size: 1.7rem;
   }
   
-  .topnav a:not(:last-child):hover {
+  .topnav a:not(:last-child):hover,
+  .topnav a:not(:last-child):active {
     background-color: #ddd;
     color: black;
   }

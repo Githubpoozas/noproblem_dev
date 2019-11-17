@@ -49,6 +49,23 @@ body:lang(en) {
   font-size: 2rem;
 }
 
+.header {
+  text-align: center;
+  font-weight: 900;
+}
+
+.graybar {
+  height: 5px;
+}
+
+.graybar-left {
+  text-align: right;
+}
+
+.graybar-right {
+  text-align: left;
+}
+
 .u-center-text {
   text-align: center  !important;
 }
@@ -195,24 +212,18 @@ body:lang(en) {
   height: 30px;
 }
 
-.header {
+.header__bannerGray {
+  background-color: #989898;
   text-align: center;
-  font-weight: 900;
 }
 
-.graybar {
-  height: 5px;
-}
-
-.graybar-left {
-  text-align: right;
-}
-
-.graybar-right {
-  text-align: left;
+.header__bannerGray-logo {
+  width: 15rem;
+  margin: 2rem 0;
 }
 
 .topnav {
+  margin: 1rem 0;
   overflow: hidden;
   background-color: #E61E29;
 }
@@ -227,7 +238,8 @@ body:lang(en) {
   font-size: 1.7rem;
 }
 
-.topnav a:not(:last-child):hover {
+.topnav a:not(:last-child):hover,
+.topnav a:not(:last-child):active {
   background-color: #ddd;
   color: black;
 }
@@ -260,6 +272,11 @@ body:lang(en) {
     display: block;
     text-align: left;
   }
+}
+
+.section-product {
+  margin: auto;
+  width: 90%;
 }
 
 .swiper-container__slide3 {
@@ -372,7 +389,7 @@ body:lang(en) {
   background-color: #818181;
   width: auto;
   position: fixed;
-  top: 500px;
+  bottom: 30px;
   right: -25px;
   z-index: 5000;
 }
@@ -381,9 +398,14 @@ body:lang(en) {
   display: none;
 }
 
+.socialmedia__button {
+  margin: 0;
+}
+
 .socialmedia__icon {
-  margin: 5px 7px;
+  margin: 0 7px 5px;
   width: 100%;
+  cursor: pointer;
 }
 
 .socialmedia__icon img {
@@ -435,7 +457,7 @@ body:lang(en) {
           transform: rotate(-180deg);
   z-index: 8000;
   position: fixed;
-  top: 551px;
+  bottom: 25px;
   font-size: 16px;
   background-color: #C9C9C9;
   color: #818181;
@@ -446,7 +468,7 @@ body:lang(en) {
 }
 
 .swiper-container__slide1 {
-  height: 30rem;
+  margin-top: 3rem;
   width: 95%;
 }
 
@@ -483,27 +505,31 @@ body:lang(en) {
 .swiper-slide:nth-child(3n) {
     width: 40%;
 } */
-.content {
+.home__content {
   width: 100%;
 }
 
-.section-swiper {
+.home__section-swiper {
   margin: auto;
   width: 90%;
 }
 
-.section-project {
+.home__section-project {
   margin: auto;
   width: 90%;
 }
 
-.section-banner {
+.home__section-banner {
   margin: auto;
   width: 90%;
 }
 
-.section-lastest-product {
+.product__content {
+  width: 100%;
+}
+
+.product__section-banner {
   margin: auto;
-  width: 90%;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,6 +18,11 @@
     width: 90%;
 }
 
+@mixin horizontalCenterFit{
+    margin: auto;
+    width: 100%;
+}
+
 @mixin verticalCenter {
     margin: 0;
     position: absolute;

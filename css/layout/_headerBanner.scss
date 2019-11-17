@@ -1,0 +1,10 @@
+.header__banner {}
+
+.header__bannerGray {
+    background-color: $color-header-background;
+text-align: center;
+    &-logo {
+        width: 15rem;
+        margin: 2rem 0;
+    }
+}
