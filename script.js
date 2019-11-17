@@ -1,3 +1,13 @@
+// navbar
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 // Slide
 var swiper1 = new Swiper(".swiper-container__slide1", {
   // autoHeight: true,
@@ -141,16 +151,20 @@ $(document).ready(function() {
 
   $("input").on("click", function() {
     if (ckbox.is(":checked")) {
-      $(".socialmedia").animate({right: '0px'});
-      $(".socialmedia__icon").css("margin-left", "0");
+      $(".socialmedia").animate({right: '0px'},"slow");
+      $(".socialmedia__icon").animate({margin: "5px 20px"});
       $(".socialmedia__rotated").animate({opacity: '0'},"slow");
       $(".socialmedia__rotated").css("visibility", "hidden");
+      $(".socialmedia__item").animate({opacity: '1'},"slow");
+
 
     } else {
-      $(".socialmedia").animate({right: '-25px'});
-      $(".socialmedia__icon").css("margin-left", "-12px");
+      $(".socialmedia").animate({right: '-25px'},"slow");
+      $(".socialmedia__icon").animate({margin: "5px 7px"});
       $(".socialmedia__rotated").animate({opacity: '1'},"slow");
       $(".socialmedia__rotated").css("visibility", "visible");
+      $(".socialmedia__item").animate({opacity: '0'},"slow");
+
 
     }
   });

@@ -1,4 +1,15 @@
 .footer {
+    background-color: $color-primary;
+
+    span {
+        font-size: 2.5rem;
+    }
+
+    p {
+        
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
 
     a:link,
     a:visited {
@@ -10,38 +21,82 @@
     &__container {
         background-color: $color-footer;
         color: $color-white;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 
     &__row {}
 
     &__col {
-        &__icon {}
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        &:first-child {
+            margin: auto;
+        }
+
+        &:not(:first-child) {
+            border-left: 2px solid $color-white;
+            padding-left:2rem;
+        }
+
+        &__icon {
+            max-width: 40%;
+            margin: auto;
+        }
 
         &__contact {}
 
-        &__socialmedia {}
-    }
+        &__socialmedia {
 
-    &__icon {}
+            &__list {
+                padding: 0;
+                text-decoration: none;
+                list-style-type: none;
+                display: flex;
+                margin-bottom: 3rem;
+            }
 
-    &__contact {}
+            &__item {
+                margin-right: 30px;
 
-    &__socialmedia {
-        &__list {
-            text-decoration: none;
-            list-style-type: none;
+                a {
+                    cursor: pointer;
 
-            display: flex;
-        }
-
-        &__item {
-            margin: auto;
-
-            a {
-                img {
-                    width: 50px;
+                    img {
+                        width: 50px;
+                    }
                 }
             }
         }
+
+
+    }
+
+    &__address{
+        margin-bottom: 1.5rem;
+    }
+
+    &__span {
+        margin-bottom: 3rem;
+    }
+
+    &__tel,
+    &__fax {
+        display: flex;
+
+        &-name{
+            width:12rem;
+        }
+    }
+
+    &__fax{
+        margin-bottom:1.5rem;
+    }
+
+
+    &__whitebar {
+        background-color: $color-white;
+        height: 30px;
     }
 }

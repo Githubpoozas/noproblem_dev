@@ -1,16 +1,16 @@
 .header {
     text-align: center;
-
+    font-weight: 900;
 }
 
 .graybar {
     height: 5px;
 
-    &-right {
+    &-left {
         text-align: right;
     }
 
-    &-left {
+    &-right {
         text-align: left;
     }
 }

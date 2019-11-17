@@ -15,49 +15,42 @@
     />
 
     <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous"
-  />
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <link rel="stylesheet" href="./css/style.css" />
+
 
     <title>noproblem</title>
   </head>
   <body>
     <!-- header banner -->
-    <header class="header">
+    <header class="header__banner">
       <img src="/img/home-header-01.svg" alt="" />
     </header>
 
     <!-- navbar -->
-    <div class="navigation u-margin-bottom-medium">
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">home</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">custom</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">สินค้า</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">เทคนิคสกรีน เทคนิคปัก</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">เกี่ยวกับเรา</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">ติดต่อเรา</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="https://www.google.com/">HOME</a>
+        <a href="https://www.google.com/">CUSTOM</a>
+        <a href="https://www.google.com/">สินค้า</a>
+        <a href="https://www.google.com/">เทคนิคสกรีน เทคนิคปัก</a>
+        <a href="https://www.google.com/">เกี่ยวกับเรา</a>
+        <a href="https://www.google.com/">ติดต่อเรา</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+    
 
     <main class="content">
       <!-- slide -->
@@ -100,9 +93,13 @@
 
       <!-- project -->
       <section class="section-project u-margin-bottom-medium">
-        <div class="header">
-          <h2 class="heading-primary ">our project</h2>
-          <h3 lang="th" class="heading-secondary">ผลงานของเรา</h3>
+        <div class="container header">
+          <div class="row">
+            <div class="col-sm-12 col-md-12">
+              <h2 class="heading-primary ">our project</h2>
+              <h3 lang="th" class="heading-secondary">ผลงานของเรา</h3>
+            </div>
+          </div>
         </div>
         <div class="swiper-container swiper-container__slide2">
           <div class="swiper-wrapper swiper-wrapper__slide2">
@@ -267,17 +264,17 @@
       </section>
 
       <!-- lastest product -->
-      <section class="section-lastest-product u-margin-bottom-small">
-        <div class="header">
+      <section class="section-lastest-product u-margin-bottom-medium">
+        <div class="container header">
           <div class="row">
-            <div class="header-col  graybar-right">
+            <div class="col-sm-12 col-md-4 graybar-left">
               <img src="/img/graybar.svg" alt="" class="graybar" />
             </div>
-            <div class="header-col">
+            <div class="col-sm-12 col-md-4">
               <h2 class="heading-primary ">lastest product</h2>
               <h3 lang="th" class="heading-secondary">สินค้าล่าสุด</h3>
             </div>
-            <div class="header-col  graybar-left">
+            <div class="col-sm-12 col-md-4 graybar-right">
               <img src="/img/graybar.svg" alt="" class="graybar" />
             </div>
           </div>
@@ -326,13 +323,13 @@
       </section>
 
       <!-- more product -->
-      <section>
+      <section class="section-more u-margin-bottom-medium">
         <div class="more-button">
           <a href="#" class="btn btn--white" lang="th">สินค้าเพิ่มเติม</a>
         </div>
       </section>
 
-      <!-- socialmedia bar -->
+      <!-- social media bar -->
       <div class="socialmedia" id="socialmedia">
         <input
           type="checkbox"
@@ -375,49 +372,72 @@
     <footer class="footer" lang="th">
       <div class="container-fluid footer__container">
         <div class="row footer__row">
-          <div class="col-sm footer__col footer__col__icon">
-            <div class="footer__icon"></div>
-            <img src="./img/noproblem_logo.svg" alt="" />
-          </div>
-          <div class="col-sm footer__col footer__col__contact">
-            <div class="footer__contact">
-              <span>CONTACH</span>
-              <p>
-                ที่อยู่ 58/17 ซอย 14/19 ถนนสุขสวัสดิ์ แขวงจอมทอง เขตจอมทอง
-                กรุงเทพมหานคร 10150
-              </p>
-              <p>
-                โทรศัพท์ &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="tel:066-165-1987">0-2460-2200-11</a><br />แฟกซ์
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="tel:024761866">0-2476-1866</a>
-              </p>
-              <p>เวลาทำการ จันทร์-เสาร์ เวลา 08:00-17:00</p>
+          <div class="col-sm-12 col-md-4 footer__col">
+            <div class="footer__col__icon">
+              <img src="./img/noproblem_logo.svg" alt="" />
             </div>
           </div>
-          <div class="col-sm footer__col footer__col__socialmedia">
-            <div class="footer__socialmedia">
-              <span>SOCIAL MEDIA</span>
-              <ul class="footer__socialmedia__list">
-                <li class="footer__socialmedia__item">
+          <div class="col-sm-12 col-md-4 footer__col">
+            <div class="footer__col__contact">
+              <div class="footer__span">
+                <span>CONTACT</span>
+              </div>
+              <div class="footer__address">
+                <p>
+                  ที่อยู่ 58/17 ซอย 14/19 ถนนสุขสวัสดิ์ แขวงจอมทอง เขตจอมทอง
+                  กรุงเทพมหานคร 10150
+                </p>
+              </div>
+              <div class="footer__tel">
+                <div class="footer__tel-name">
+                  <p>โทรศัพท์</p>
+                </div>
+                <div class="footer__tel-nuber">
+                  <a href="tel:066-165-1987">0-2460-2200-11</a>
+                </div>
+               </div>
+
+              <div class="footer__fax">
+                <div class="footer__fax-name">
+                  <p>
+                    แฟกซ์
+                  </p>
+                </div>
+                <div class="footer__fax-number">
+                    <a href="tel:024761866">0-2476-1866</a>
+                </div>
+              </div>
+
+              <div class="footer__opentime">
+                <p>เวลาทำการ จันทร์-เสาร์ เวลา 08:00-17:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 footer__col">
+            <div class=" footer__col__socialmedia">
+              <div class="footer__span">
+                <span>SOCIAL MEDIA</span>
+              </div>
+              <ul class="footer__col__socialmedia__list">
+                <li class="footer__col__socialmedia__item">
                   <a href="#"
                     ><img src="./img/socialmedia/whatsapp.svg" alt=""
                   /></a>
                 </li>
-                <li class="footer__socialmedia__item">
+                <li class="footer__col__socialmedia__item">
                   <a href="#"
                     ><img src="./img/socialmedia/facebook.svg" alt=""
                   /></a>
                 </li>
-                <li class="footer__socialmedia__item">
+                <li class="footer__col__socialmedia__item">
                   <a href="#"><img src="./img/socialmedia/line.svg" alt=""/></a>
                 </li>
-                <li class="footer__socialmedia__item">
+                <li class="footer__col__socialmedia__item">
                   <a href="#"
                     ><img src="./img/socialmedia/messenger.svg" alt=""
                   /></a>
                 </li>
-                <li class="footer__socialmedia__item">
+                <li class="footer__col__socialmedia__item">
                   <a href="#"
                     ><img src="./img/socialmedia/wechat.svg" alt=""
                   /></a>
@@ -437,11 +457,14 @@
       </div>
     </footer>
 
+    <div class="footer__whitebar"></div>
+
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
