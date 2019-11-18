@@ -43,6 +43,13 @@ body:lang(en) {
   font-size: 2rem;
 }
 
+.heading-primary:lang(th) {
+  color: #204287;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
 .heading-secondary {
   color: #5C5C5C;
   text-transform: uppercase;
@@ -86,8 +93,12 @@ body:lang(en) {
   margin-bottom: 10rem !important;
 }
 
+.u-margin-top-medium {
+  margin-top: 3rem !important;
+}
+
 .u-margin-top-big {
-  margin-top: 8rem !important;
+  margin-top: 6rem !important;
 }
 
 .u-margin-top-huge {
@@ -512,6 +523,96 @@ body:lang(en) {
 .text {
   margin: auto;
   width: 90%;
+}
+
+.form {
+  margin: 0 auto;
+  width: 85%;
+  text-align: center;
+}
+
+.form__input {
+  width: 100%;
+  padding-left: 3rem;
+}
+
+.form ::-webkit-input-placeholder {
+  /* Firefox */
+  opacity: 0.2;
+}
+
+.form :-ms-input-placeholder {
+  /* Firefox */
+  opacity: 0.2;
+}
+
+.form ::-ms-input-placeholder {
+  /* Firefox */
+  opacity: 0.2;
+}
+
+.form ::placeholder {
+  /* Firefox */
+  opacity: 0.2;
+}
+
+.form :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  opacity: 0.2;
+}
+
+.form ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  opacity: 0.2;
+}
+
+.form__submit {
+  background-color: #5C5C5C;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem 4rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.map {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.map__img {
+  width: 100%;
+}
+
+.googleMap {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+.googleMap__mapouter {
+  margin: 0 auto;
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 100%;
+}
+
+.googleMap__gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 100%;
+}
+
+.googleMap__iframe {
+  height: 500px;
+  width: 100%;
 }
 
 .home__content {

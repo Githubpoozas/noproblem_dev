@@ -1,0 +1,81 @@
+.form {
+    margin: 0 auto;
+    width: 85%;
+    text-align: center;
+
+    &__input {
+        width: 100%;
+        padding-left: 3rem;
+    }
+
+    &__textarea {}
+
+    ::placeholder {
+        /* Firefox */
+        opacity: 0.2;
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        opacity: 0.2;
+    }
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        opacity: 0.2;
+    }
+
+    &__submit {
+        background-color: $color-buttom-more;
+        color: $color-white;
+        border: none;
+        cursor: pointer;
+        padding: 0.3rem 4rem;
+    }
+}
+
+// disable step button
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+
+.map {
+    margin: 0 auto;
+    width: 90%;
+
+    &__img {
+        width: 100%;
+
+    }
+}
+
+
+.googleMap {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+
+
+    &__mapouter {
+        margin: 0 auto;
+        position: relative;
+        text-align: right;
+        height: 500px;
+        width: 100%;
+    }
+
+    &__gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 500px;
+        width: 100%;
+    }
+
+    &__iframe {
+        height: 500px;
+        width: 100%;
+    }
+}
