@@ -133,10 +133,6 @@ body:lang(en) {
   margin-bottom: 10px;
 }
 
-.row__color {
-  height: 500px;
-}
-
 .row__color div[class^="col"] {
   padding: 0;
 }
@@ -155,10 +151,12 @@ body:lang(en) {
 
 .column-front {
   background-size: cover;
+  height: 500px;
 }
 
 .column-back {
   background-size: cover;
+  height: 500px;
 }
 
 .color-picker {

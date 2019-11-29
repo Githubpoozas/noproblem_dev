@@ -1,6 +1,6 @@
 
 .row__color{
-  height: 500px;
+  // height: 500px;
   
     div[class^="col"]{
       padding:0;
@@ -19,10 +19,14 @@
 
   .column-front{
     background-size: cover;
+    height: 500px;
+
   }
 
   .column-back{
     background-size: cover;
+    height: 500px;
+
   }
 
   .color-picker{
