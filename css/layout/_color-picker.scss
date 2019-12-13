@@ -1,10 +1,8 @@
 
 .row__color{
-  // height: 500px;
   
     div[class^="col"]{
       padding:0;
-      // height: 400px;
     }
     
   }
@@ -15,6 +13,7 @@
     -webkit-flex-wrap: wrap; /* Safari 6.1+ */
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
   }
 
   .column-front{
@@ -32,7 +31,7 @@
   .color-picker{
   
     width: 50px !important;
-    height: 50px !important;
-    border: 1px solid;
+    height: 25px !important;
     background-position: center;
+margin:3px;    
   }

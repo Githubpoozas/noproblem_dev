@@ -147,6 +147,8 @@ body:lang(en) {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .column-front {
@@ -161,9 +163,9 @@ body:lang(en) {
 
 .color-picker {
   width: 50px !important;
-  height: 50px !important;
-  border: 1px solid;
+  height: 25px !important;
   background-position: center;
+  margin: 3px;
 }
 
 .gallery-thumbs {
@@ -197,6 +199,7 @@ body:lang(en) {
   width: 100% !important;
   height: auto;
   margin: 0 !important;
+  cursor: pointer;
 }
 
 .gallery-thumbs__img {
@@ -324,6 +327,10 @@ body:lang(en) {
   height: 30px;
 }
 
+.header__banner img {
+  width: 100%;
+}
+
 .header__bannerGray {
   background-color: #989898;
   text-align: center;
@@ -338,6 +345,11 @@ body:lang(en) {
   margin: 1rem 0;
   overflow: hidden;
   background-color: #E61E29;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .topnav a {
@@ -737,6 +749,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .product__section-banner {
   margin: auto;
+  width: 100%;
+}
+
+.banner img {
   width: 100%;
 }
 
