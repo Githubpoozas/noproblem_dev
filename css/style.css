@@ -345,11 +345,6 @@ body:lang(en) {
   margin: 1rem 0;
   overflow: hidden;
   background-color: #E61E29;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .topnav a {
