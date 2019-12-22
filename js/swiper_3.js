@@ -2,7 +2,7 @@
 //slide 3
 var product = new Swiper(".swiper-container__slide3", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 50,
     slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,

@@ -3,8 +3,8 @@
 
 }
 .swiper-container__slide3 {
-    width: 90%;
-    height: 37vw;
+padding-left: 50px;
+padding-right: 50px;
 
 }
 
@@ -26,22 +26,17 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-
-    width: 100%;
-    height: 100%;
     flex-wrap:wrap;
 
-    @include respond(large-desktop){
-        height: 90%;
-    }
 
     .cloth {
+        height: 425px;
+
         img {
             width: 100%;
         }
   
-        position: initial;
-        display: block;
+ 
   
         &__side {
             a {

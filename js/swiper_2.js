@@ -7,7 +7,7 @@ var swiper2 = new Swiper('.swiper-container__slide2', {
     // loop: true,
     // loopFillGroupWithBlank: true,
   //   slidesPerColumnFill: 'column',
-    spaceBetween:30,
+    spaceBetween:10,
     // pagination: {
     //   el: '.swiper-pagination',
     //   clickable: true,

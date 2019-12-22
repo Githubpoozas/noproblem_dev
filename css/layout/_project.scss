@@ -1,27 +1,20 @@
 //slide 2
 .swiper-container__slide2 {
-    // padding: 0;
-    // margin: auto;
-    // // width: 90%;
     height: 23vw;
+    width: 100%;
     
 
 }
 
 .swiper-wrapper__slide2 {
-    padding: 0 3.5vmax;
-    // margin: 0 auto auto;
+    padding-left: 8px;
 }
 
 .swiper-slide__slide2 {
-    // padding: 0;
-    // margin: 0 auto 20px;
 
-    /* width: 200px; */
     text-align: center;
     font-size: 18px;
     background: #fff;
-    // height: calc((100% - 30px) / 2);
     width: 10vw !important;
     height: 10vw !important;
     /* Center slide text vertically */
@@ -46,7 +39,11 @@
     // margin: 1vw;
 
     &__img {
-        width: 100%;
+        width: 80%;
+
+        @include respond(large-desktop){
+            width: 100%;
+        }
 
     }
 }
