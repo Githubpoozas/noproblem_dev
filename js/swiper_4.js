@@ -1,3 +1,5 @@
+
+
 var galleryThumbs = new Swiper(".gallery-thumbs", {
   spaceBetween: 5,
   slidesPerView: 4,

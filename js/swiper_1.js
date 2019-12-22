@@ -103,3 +103,4 @@ vid.onended = function() {
   swiper1.autoplay.start();
   setTimeout(loopVid, 6000);
 };
+
