@@ -3,37 +3,50 @@
   &__section-color {
     width: 80%;
     max-width: 1188px;
-    height: 400px;
     margin: auto;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @include respond(large-desktop){
+      max-width: 1800px;
+  }
   }
 
   &__front,
   &__back {
     background-size: cover;
+
+    img {
+      width: 100%;
+    }
   }
 
   &__color {
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(auto-fill,25px);
-    grid-row-gap: 5px; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto-fill, 25px);
+    grid-row-gap: 5px;
 
-  
+
 
     &-picker {
       width: 50px !important;
       height: 25px !important;
       background-position: center;
       cursor: pointer;
-      margin: auto;
+      overflow: hidden;
 
-      &:first-child{
+
+
+      img {
+        transform:translate(-50%,-50%);
+
+      }
+
+      &:first-child {
         border: 1px solid black;
-        
+
       }
     }
   }

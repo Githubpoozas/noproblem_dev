@@ -38,12 +38,14 @@
 900 - 1200px:   Tablet landscape
 [1200 - 1800] is where our normal styles apply
 1800px + :      Big desktop
+2500px:         4K
 
 $breakpoint arguement choices:
 - phone
 - tab-port
 - tab-land
 - big-desktop
+- large-desktop
 
 ORDER: Base + typography > general layout + grid > page layout > components
 
@@ -64,6 +66,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
         }
         //900px
     }
+    @if $breakpoint == tab-port-plus{
+        @media (min-width: 56.25em) {
+            @content
+        }
+        //900px+
+    }
+
+
     @if $breakpoint == tab-land{
         @media (max-width: 75em) {
             @content
@@ -75,5 +85,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
             @content
         }
         //1800px
+    }
+    @if $breakpoint == large-desktop{
+        @media (min-width: 156.25em) {
+            @content
+        }
+        //2500px
     }
 }

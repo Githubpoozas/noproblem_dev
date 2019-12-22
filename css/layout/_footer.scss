@@ -1,17 +1,19 @@
 .footer {
+    background-color: $color-footer;
+    text-align: center;
+    padding: 2.5rem;
+    display: flex;
 
     p {
         font-size: 1.2rem;
         text-align: left;
         margin: 0;
         hyphens: auto;
-
     }
 
     & &__name {
 
         font-size: 1.5rem;
-
 
     }
 
@@ -21,22 +23,17 @@
         color: $color-white;
     }
 
-    height: 250px;
-    background-color: $color-footer;
-    text-align: center;
-    padding: 2.5rem;
-    display: flex;
-
-
 
     &__box {
         margin: 0 auto;
         max-width: 1188px;
-
         color: $color-white;
-
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+
+        @include respond(large-desktop){
+            max-width: 1800px;
+        }
     }
 
     &__logo {
@@ -45,7 +42,12 @@
 
         img {
             width: 130px;
+
+            @include respond(large-desktop){
+                width: 250px;
+            }
         }
+
     }
 
     &__contacts {
@@ -95,6 +97,10 @@
 
             img {
                 width: 38px;
+
+                @include respond(large-desktop){
+                    width: 70%;
+                }
             }
         }
 
@@ -103,6 +109,7 @@
             display: grid;
             grid-template-columns: 20% 80%;
         }
+
 
 
 

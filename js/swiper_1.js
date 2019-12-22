@@ -11,7 +11,9 @@ var swiper1 = new Swiper(".swiper-container__slide1", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true
-  }
+  },
+  grabCursor:true
+
   // navigation: {
   //   nextEl: ".swiper-button-next",
   //   prevEl: ".swiper-button-prev"

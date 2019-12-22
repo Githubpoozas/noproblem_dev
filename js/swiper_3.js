@@ -10,5 +10,7 @@ var product = new Swiper(".swiper-container__slide3", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
-    }
+    },
+    grabCursor:true
+
   });

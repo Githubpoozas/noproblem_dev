@@ -17,6 +17,22 @@
         color: $color-white;
         background: $color-buttom-more;
     }
+
+    &__gender{
+        &,
+        &:link,
+        &:visited{
+            background-color: $color-secondary;
+            color:$color-white;
+            font-size:1.3rem;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-weight: bold;
+        }
+
+
+
+    }
 }
 
 .more-button{

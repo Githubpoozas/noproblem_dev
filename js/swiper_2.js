@@ -16,4 +16,6 @@ var swiper2 = new Swiper('.swiper-container__slide2', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    grabCursor:true
+
   });

@@ -31,6 +31,10 @@
     height: 100%;
     flex-wrap:wrap;
 
+    @include respond(large-desktop){
+        height: 90%;
+    }
+
     .cloth {
         img {
             width: 100%;
@@ -76,7 +80,7 @@
         position: absolute;
         bottom: 10px;
         text-align: left;
-
+        font-size: 1.5rem;
     }
 }
 
