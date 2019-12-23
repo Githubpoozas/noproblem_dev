@@ -30,12 +30,16 @@ padding-right: 50px;
 
 
     .cloth {
-        height: 425px;
+        height: 22vmax;
+
+        @include respond(large-desktop){
+            height: 680px;
+        }
 
         img {
             width: 100%;
         }
-  
+ 
  
   
         &__side {
