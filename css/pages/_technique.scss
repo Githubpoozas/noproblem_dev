@@ -1,14 +1,42 @@
-.banner{
-    img{
+.banner {
+    img {
         width: 100%;
     }
 }
 
-.img3{
+.img3 {
 
-    img{
+    img {
         width: 100%;
-
+    }
+    @include respond(phone){
+       margin-bottom: 10px;
     }
 }
 
+.buying {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+
+    @include respond(phone){
+        grid-template-columns: 1fr;
+        grid-row-gap:20px;
+    }
+
+    &__btn {
+        &-line {
+            text-align: right;
+            
+    @include respond(phone){
+        text-align: center;
+    }
+        }
+
+        &-call{
+            @include respond(phone){
+                text-align: center;
+            }
+        }
+    }
+}

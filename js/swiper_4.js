@@ -8,8 +8,11 @@ var galleryThumbs = new Swiper(".gallery-thumbs", {
   watchSlidesProgress: true
 });
 var galleryTop = new Swiper(".gallery-top", {
-  loop: true,
-  loopedSlides: 5, //looped slides should be the same
+  spaceBetween: 3,
+  centeredSlides: true,
+
+  // loop: true,
+  // loopedSlides: 5, //looped slides should be the same
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"

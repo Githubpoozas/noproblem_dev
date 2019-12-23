@@ -1,12 +1,17 @@
 .section-product {
-    @include horizontalCenter;
 
 }
 .swiper-container__slide3 {
 padding-left: 50px;
 padding-right: 50px;
 
+@include respond(phone){
+    padding-left: 0px;
+padding-right: 0px;
 }
+
+}
+
 
 .swiper-slide__slide3 {
     text-align: center;
@@ -26,9 +31,14 @@ padding-right: 50px;
     -webkit-align-items: center;
     align-items: center;
     flex-wrap:wrap;
+  
+
+    @include respond(phone){
+        width: 90%;
+    }
 
     .cloth {
-
+    
         a{
             display: block;
    
@@ -36,14 +46,30 @@ padding-right: 50px;
 
         &__img{
             width: 100%;
+            @include respond(phone){
+                width: 90%;
+            }
         }
 
         &__price{
             width: 100%;
             text-align: left;
             padding-left: 10px;
+
+            @include respond(phone){
+                padding-left: 25px;
+    
+            }
+        }
+    }
+
+    &-button{
+        @include respond(phone){
+            display: none;
+
         }
     }
         
 }
+
 

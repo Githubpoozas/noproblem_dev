@@ -5,9 +5,19 @@
         margin-right: auto;
         display: grid;
         grid-template-columns: 15% 50% 35%;
+        margin-bottom: 30px;
+        
 
         @include respond(large-desktop) {
             max-width: 1800px;
+        }
+
+        @include respond(tab-port) {
+            margin-bottom: 20px;
+        }
+        
+        @include respond(phone) {
+            grid-template-columns: 1fr;
         }
 
 
@@ -15,23 +25,41 @@
 }
 
 .detail {
+
+
     &-thumb {
         width: 100%;
         margin: 0;
         cursor: pointer;
 
+        @include respond(phone) {
+            display: none;
+        }
+
         &__wrapper {
             display: grid;
-            justify-content:center ;
+            justify-content: center;
             align-content: flex-start;
         }
 
         &__slide {
             margin-bottom: 5px;
-
+            width: 100% !important;
 
             img {
-                width: 100px;
+                width: 90px;
+
+                @include respond(large-desktop) {
+                    width: 140px;
+                }
+
+                @include respond(tab-land) {
+                    width: 80px;
+                }
+
+                @include respond(tab-port) {
+                    width: 60px;
+                }
             }
         }
 
@@ -41,13 +69,20 @@
         width: 100%;
 
         &__wrapper {
-
+            transform: translate3d(0px,0px,0px);
         }
 
         &__slide {
-
+            width: 100%;
+            @include respond(phone){
+                width: 90% !important;
+            }
             img {
                 width: 100%;
+        
+                // @include respond(phone){
+                //     width: 300px !important;
+                // }
             }
         }
     }
@@ -58,38 +93,46 @@
         padding: 10px;
         font-size: 1.5rem;
 
-        &__size-table{
-        table{
-            margin: 0 auto;
-        }
-      
+        &__gender{
 
-            tr{
+// text-align: center;
+
+        }
+
+        &__size-table {
+            table {
+                margin: 0 auto;
+            }
+
+
+            tr {
                 text-align: center;
 
                 th,
-                td{
+                td {
                     padding: 3px 10px;
                     border-bottom: 3px solid $color-white;
-                    
-                    &:first-child{
+
+                    &:first-child {
                         border-right: 3px solid $color-white;
                     }
                 }
 
-                th{
+                th {
                     background-color: $color-th;
-                    color:$color-white;
+                    color: $color-white;
                     font-weight: 400;
-                   
+
                 }
-                td{
+
+                td {
                     font-weight: bold;
                 }
-                td:first-child{
+
+                td:first-child {
                     background-color: $color-td-size;
-                    color:$color-white;
-                    
+                    color: $color-white;
+
                 }
 
             }
@@ -98,9 +141,19 @@
 }
 
 .gallery-thumbs .swiper-slide {
-
     opacity: 0.4;
-  }
-  .gallery-thumbs .swiper-slide-thumb-active{
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
     opacity: 1;
-  }
+}
+
+.at-share-btn-elements{
+      @include respond(tab-port) {
+        text-align: center;   
+     }
+
+   
+    
+
+}
