@@ -14,3 +14,22 @@ var product = new Swiper(".swiper-container__slide3", {
     grabCursor:true
 
   });
+
+  $(document).ready(function() {
+    $(".cloth__img").mouseenter(function() {
+      $(this).attr(
+        "src",
+        $(this)
+          .attr("src")
+          .replace("_1", "_2")
+      );
+    });
+    $(".cloth__img").mouseleave(function() {
+      $(this).attr(
+        "src",
+        $(this)
+          .attr("src")
+          .replace("_2", "_1")
+      );
+    });
+  });

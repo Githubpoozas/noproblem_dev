@@ -1,10 +1,21 @@
+
 .header__banner {
-    margin-bottom: 15px;
+    img{
+        width: 100%;
+    }
+}
+
+.header__bannerGray {
+    background-color: $color-header-background;
+text-align: center;
+    &-logo {
+        width: 15rem;
+        margin: 2rem 0;
+    }
 }
 
 .banner {
 
-    // margin:auto;
     &__img {
 
         width: 100%;
