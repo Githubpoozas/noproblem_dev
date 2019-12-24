@@ -1,22 +1,30 @@
 //slide 2
 .swiper-container__slide2 {
-    height: 23vw;
-    width: 100%;
-    
-    @include respond(tab-land){
-       padding-left:40px ;
-    }
-    @include respond(tab-port){
-        padding-left:35px ;
-     }
-     @include respond(phone){
-        padding-left: 30px;
-        height: 125px;
-    }
+
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+
+
+        @include respond(large-desktop){
+            height: 550px;
+        }
+        @include respond(tab-land){
+            height: 350px;
+        }
+        // @include respond(tab-port){
+        //     width: 85px;
+        //     height: 85px;
+        // }
+        // @include respond(phone){
+        //     width: 60px;
+        //     height: 60px;
+        //     margin-bottom: 10px;
+        // }
 }
 
 .swiper-wrapper__slide2 {
-    padding-left: 8px;
+
 }
 
 .swiper-slide__slide2 {
@@ -24,8 +32,6 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
-    width: 10vw !important;
-    height: 10vw !important;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -44,10 +50,13 @@
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
+
+    height: 48%;
+   
     
     @include respond(phone){
-        width: 60px !important;
-        height: 60px !important;
+        // width: 60px !important;
+        // height: 60px !important;
     }
 
 
@@ -60,29 +69,26 @@
             width: 240px;
             height: 240px;
         }
-        @include respond(tab-land){
-            width: 100px;
-            height: 100px;
-        }
-        @include respond(tab-port){
-            width: 85px;
-            height: 85px;
-        }
-        @include respond(phone){
-            width: 60px;
-            height: 60px;
-            margin-bottom: 10px;
-        }
+        // @include respond(tab-land){
+        //     width: 100px;
+        //     height: 100px;
+        // }
+        // @include respond(tab-port){
+        //     width: 85px;
+        //     height: 85px;
+        // }
+        // @include respond(phone){
+        //     width: 60px;
+        //     height: 60px;
+        //     margin-bottom: 10px;
+        // }
 
 
     }
-}
 
-.swiper-button-next,
-.swiper-button-prev{
-
-@include respond(phone){
-    // display: none;
+    &-button{
+        @include respond(phone){
+            // display: none;
+        }
+    }
 }
-}
-

@@ -2,16 +2,16 @@
 
 }
 .swiper-container__slide3 {
-padding-left: 50px;
-padding-right: 50px;
 
-@include respond(phone){
-    padding-left: 0px;
-padding-right: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @include respond(phone){
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
 }
-
-}
-
 
 .swiper-slide__slide3 {
     text-align: center;
@@ -33,9 +33,6 @@ padding-right: 0px;
     flex-wrap:wrap;
   
 
-    @include respond(phone){
-        width: 90%;
-    }
 
     .cloth {
     
@@ -64,10 +61,12 @@ padding-right: 0px;
     }
 
     &-button{
-        // @include respond(phone){
-        //     display: none;
+        @include respond(phone){
+            display: none;
 
-        // }
+        }
+
+
     }
         
 }

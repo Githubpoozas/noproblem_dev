@@ -1,19 +1,17 @@
 //slide 3
 var product = new Swiper(".swiper-container__slide3", {
-  slidesPerView: 2,
-  slidesPerGroup: 2,
-  spaceBetween: 0,
-  // centeredSlides: true,
+  slidesPerView: 1,
   breakpoints: {
     900: {
       slidesPerView: 3,
-      slidesPerGroup: 3,
-      spaceBetween: 30
+      spaceBetween: 60
+    },
+    600: {
+      slidesPerView: 3,
+      spaceBetween: 50
     }
   },
 
-  // loop: true,
-  // loopFillGroupWithBlank: true,
 
   navigation: {
     nextEl: ".swiper-button-next",
