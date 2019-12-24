@@ -1,8 +1,8 @@
 // slide 2
 var swiper2 = new Swiper(".swiper-container__slide2", {
   slidesPerView: 2,
-      slidesPerColumn: 3,
-      slidesPerGroup: 2,
+      slidesPerColumn: 4,
+      slidesPerGroup: 4,
       spaceBetween: 0,
   breakpoints: {
        900: {
@@ -12,8 +12,6 @@ var swiper2 = new Swiper(".swiper-container__slide2", {
       spaceBetween: 10,
     }
   },
-
-
 
   navigation: {
     nextEl: ".swiper-button-next",

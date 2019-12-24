@@ -69,22 +69,22 @@
         width: 100%;
 
         &__wrapper {
-            transform: translate3d(0px,0px,0px);
         }
 
         &__slide {
-            width: 100%;
+
             @include respond(phone){
-                width: 90% !important;
+                width: 80% !important;
             }
+     
             img {
                 width: 100%;
         
-                // @include respond(phone){
-                //     width: 300px !important;
-                // }
+          
             }
         }
+
+
     }
 
 
@@ -95,7 +95,6 @@
 
         &__gender{
 
-// text-align: center;
 
         }
 

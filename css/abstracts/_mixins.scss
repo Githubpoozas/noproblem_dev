@@ -60,6 +60,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
         }
         //600px
     }
+    @if $breakpoint == phone-plus{
+        @media (min-width: 37.5em) {
+            @content
+        }
+        //600px
+    }
     @if $breakpoint == tab-port{
         @media (max-width: 56.25em) {
             @content

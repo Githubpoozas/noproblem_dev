@@ -17,6 +17,7 @@
     }
 
     @include respond(phone) {
+
       margin-bottom: 10px;
       width: 100%;
       grid-template-columns: 88% 12%;

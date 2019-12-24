@@ -403,18 +403,9 @@ body:lang(en) {
   width: 100%;
 }
 
-.detail-top__wrapper {
-  -webkit-transform: translate3d(0px, 0px, 0px);
-          transform: translate3d(0px, 0px, 0px);
-}
-
-.detail-top__slide {
-  width: 100%;
-}
-
 @media (max-width: 37.5em) {
   .detail-top__slide {
-    width: 90% !important;
+    width: 80% !important;
   }
 }
 
@@ -820,12 +811,6 @@ body:lang(en) {
 @media (max-width: 37.5em) {
   .swiper-slide__slide3 .cloth__price {
     padding-left: 25px;
-  }
-}
-
-@media (max-width: 37.5em) {
-  .swiper-slide__slide3-button {
-    display: none;
   }
 }
 

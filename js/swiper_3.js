@@ -1,9 +1,9 @@
 //slide 3
 var product = new Swiper(".swiper-container__slide3", {
-  slidesPerView: 1,
-  slidesPerGroup: 1,
+  slidesPerView: 2,
+  slidesPerGroup: 2,
   spaceBetween: 0,
-  centeredSlides: true,
+  // centeredSlides: true,
   breakpoints: {
     900: {
       slidesPerView: 3,
@@ -12,8 +12,8 @@ var product = new Swiper(".swiper-container__slide3", {
     }
   },
 
-  loop: true,
-  loopFillGroupWithBlank: true,
+  // loop: true,
+  // loopFillGroupWithBlank: true,
 
   navigation: {
     nextEl: ".swiper-button-next",
