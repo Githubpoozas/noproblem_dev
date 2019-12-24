@@ -1,13 +1,16 @@
 //slide 3
 var product = new Swiper(".swiper-container__slide3", {
   slidesPerView: 1,
+  slidesPerGroup: 1,
   breakpoints: {
     900: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
       spaceBetween: 60
     },
     600: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
       spaceBetween: 50
     }
   },
