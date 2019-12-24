@@ -3,7 +3,7 @@
   overflow: hidden;
   background-color: $color-navbar;
 
-  @include respond(tab-port-plus) {
+  @include respond(phone-plus) {
     display: flex;
     justify-content: center;
 
